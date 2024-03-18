@@ -5,16 +5,19 @@ A Movie Web Application built using HTML5, CSS3, and Vanilla JavaScript. The app
 ## Key Features:
 1. **Movie List Page:** Displays a list of movies with relevant information such as title, release year, and poster image.
 > (implemented in `./assets/js/index.js`)
+
 ![Screenshot 2024-03-18 223749](https://github.com/Ajay-durgesam/MovieMania/assets/114494331/b0615b36-ce6e-4f3b-b5bf-a1c24abcfe36)
 
 2. **Trailer Video Component:** Shows a trailer video for each movie, located just beneath the banner containing movie cards.
 > (implemented in `./assets/js/index.js`)
+
 ![Screenshot 2024-03-18 223900](https://github.com/Ajay-durgesam/MovieMania/assets/114494331/35b56b32-d08a-4d20-b60d-0a6af02e5e5b)
 ![Screenshot 2024-03-18 224556](https://github.com/Ajay-durgesam/MovieMania/assets/114494331/5042c659-db91-4f21-8e5b-d592765dc614)
 
 
 3. **Search Functionality:** Users can search for movies using a search box. Additionally, users can quickly type into the search box using the Ctrl + K shortcut.
 > (implemented in `./assets/js/search.js`)
+
 ![Screenshot 2024-03-18 224054](https://github.com/Ajay-durgesam/MovieMania/assets/114494331/02808277-46bc-49ab-baaf-37528ee231b4)
 ![Screenshot 2024-03-18 224109](https://github.com/Ajay-durgesam/MovieMania/assets/114494331/ab59e895-e5b2-4e80-989e-4f9f19b68490)
 
@@ -26,6 +29,7 @@ A Movie Web Application built using HTML5, CSS3, and Vanilla JavaScript. The app
 1. Clone this repository to your local machine.
 2. Navigate to the project directory.
 3. Open the `index.html` file in a web browser with live server to view the application.(also if you wish to use your own TMDB API key, you can generate from here[TMDB site]((https://www.themoviedb.org/)))
+4. You can also use this link to open the website directly [[MovieMania](https://movie-mania-smoky.vercel.app/)].
 
 
 ## Repository Structure:
@@ -45,7 +49,7 @@ A Movie Web Application built using HTML5, CSS3, and Vanilla JavaScript. The app
 
 
 ## Hosting:
-The application is hosted on [Vercel] at [[MovieMania](https://movie-mania-smoky.vercel.app/)]. Users can access the live version of the application by visiting the provided link.
+The application is hosted on **`Vercel`** at [[MovieMania](https://movie-mania-smoky.vercel.app/)]. Users can access the live version of the application by visiting the provided link.
 
 ## Additional Features Added:
 ### *Side Bar*: 
@@ -72,7 +76,7 @@ Implemented local storage for storing the values of movie ids, for displaying th
 >(implemented in `./assets/js/global.js`)
 
 ## Future Improvements:
-- Implement user authentication and allow users to create accounts to save favorite movies.
+- Implement user authentication and allow users to create accounts to save favorite movies like watchlist.
 - Enhance the design and user experience with more interactive features.
 
 
