@@ -4,27 +4,28 @@ A Movie Web Application built using HTML5, CSS3, and Vanilla JavaScript. The app
 
 ## Key Features:
 1. **Movie List Page:** Displays a list of movies with relevant information such as title, release year, and poster image.
+> (implemented in `./assets/js/index.js`)
 ![Screenshot 2024-03-18 223749](https://github.com/Ajay-durgesam/MovieMania/assets/114494331/b0615b36-ce6e-4f3b-b5bf-a1c24abcfe36)
 
-(implemented in `./assets/js/index.js`)
 2. **Trailer Video Component:** Shows a trailer video for each movie, located just beneath the banner containing movie cards.
+> (implemented in `./assets/js/index.js`)
 ![Screenshot 2024-03-18 223900](https://github.com/Ajay-durgesam/MovieMania/assets/114494331/35b56b32-d08a-4d20-b60d-0a6af02e5e5b)
 ![Screenshot 2024-03-18 224556](https://github.com/Ajay-durgesam/MovieMania/assets/114494331/5042c659-db91-4f21-8e5b-d592765dc614)
 
-(implemented in `./assets/js/index.js`)
+
 3. **Search Functionality:** Users can search for movies using a search box. Additionally, users can quickly type into the search box using the Ctrl + K shortcut.
+> (implemented in `./assets/js/search.js`)
 ![Screenshot 2024-03-18 224054](https://github.com/Ajay-durgesam/MovieMania/assets/114494331/02808277-46bc-49ab-baaf-37528ee231b4)
 ![Screenshot 2024-03-18 224109](https://github.com/Ajay-durgesam/MovieMania/assets/114494331/ab59e895-e5b2-4e80-989e-4f9f19b68490)
 
-(implemented in `./assets/js/search.js`)
-4. **API:** TMDB API used for fetching data and images for the movies.
 
-(implemented in `./assets/js/api.js`)
+4. **API:** TMDB API used for fetching data and images for the movies.
+> (implemented in `./assets/js/api.js`)
+
 ## Instructions for Running the Application:
 1. Clone this repository to your local machine.
 2. Navigate to the project directory.
 3. Open the `index.html` file in a web browser with live server to view the application.(also if you wish to use your own TMDB API key, you can generate from here[TMDB site]((https://www.themoviedb.org/)))
-
 
 
 ## Repository Structure:
@@ -49,6 +50,7 @@ The application is hosted on [Vercel] at [[MovieMania](https://movie-mania-smoky
 ## Additional Features Added:
 ### *Side Bar*: 
 Consisting of categories of movies such as `Genres`, and `Langauges`, Users can click on particular genre or language and can view the movies of that particular category...
+>(implemented in `./assets/js/sidebar.js`)
 
 - by Genre(ex:Adventure)
 ![Screenshot 2024-03-18 223931](https://github.com/Ajay-durgesam/MovieMania/assets/114494331/b2d1ecf0-fe07-4e27-9ad3-eb2b3f846975)
@@ -56,17 +58,18 @@ Consisting of categories of movies such as `Genres`, and `Langauges`, Users can 
 -by Language(ex:Hindi)
 ![Screenshot 2024-03-18 223953](https://github.com/Ajay-durgesam/MovieMania/assets/114494331/5f22c66a-0a4b-4f40-8696-c7920085058d)
 
-(implemented in `./assets/js/sidebar.js`)
+
 ### *Details Page*: 
 Detailed page consists of all details of that particular movie, it can be accessed by clicking on any of the movie- card, or also by clicking on the `watch now` button in the banner show in the home page.
+>(implemented in `./assets/js/detail.js`)
 
 ![Screenshot 2024-03-18 224155](https://github.com/Ajay-durgesam/MovieMania/assets/114494331/9f28dea3-869e-487e-80c6-4410fb48c86d)
 
-(implemented in `./assets/js/detail.js`)
+
 ### *Local Storage*: 
 Implemented local storage for storing the values of movie ids, for displaying the movie content in details page and also for displaying the movie list categorised by genres,etc.
 
-(implemented in `./assets/js/global.js`)
+>(implemented in `./assets/js/global.js`)
 
 ## Future Improvements:
 - Implement user authentication and allow users to create accounts to save favorite movies.
