@@ -1,7 +1,6 @@
 # MovieMania
 A Movie Web Application built using HTML5, CSS3, and Vanilla JavaScript. The application allows users to browse a list of movies, watch trailers, and search for specific movies.
 
-## Title: MovieMania
 
 ## Key Features:
 1. **Movie List Page:** Displays a list of movies with relevant information such as title, release year, and poster image.
