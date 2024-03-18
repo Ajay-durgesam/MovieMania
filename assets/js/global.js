@@ -22,6 +22,20 @@ addEventOnElements(searchTogglers, "click", function () {
   searchBox.classList.toggle("active");
 });
 
+/**
+ * search box using ctrl + k as a shortcut.
+ */
+
+document.addEventListener('keydown', function(event) {
+  // Check if 'Ctrl' and 'K' keys are pressed together
+  if (event.ctrlKey && event.key === 'k') {
+    event.preventDefault(); // Prevent the default action of the key press
+    const searchField = document.querySelector('.search-field');
+    if (searchField) {
+      searchField.focus(); // Focus the search field
+    }
+  }
+});
 
 
 
