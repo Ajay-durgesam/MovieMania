@@ -135,13 +135,6 @@ const heroBanner = function ({ results: movieList }) {
   addHeroSlide();
 
 
-  /**
-   * fetch data for home page sections (top rated, upcoming, trending)
-   */
-  for (const { title, path } of homePageSections) {
-    fetchDataFromServer(`https://api.themoviedb.org/3${path}?api_key=${api_key}&page=1`, createMovieList, title);
-  }
-
 }
 
 
@@ -172,7 +165,7 @@ const addHeroSlide = function () {
     //const movie_id = controlItem.getAttribute('data-id');
     let movie_id = sliderControls[Number(this.getAttribute("slider-control"))].getAttribute("data-id");
 
-    loadVideoComponent(movie_id);
+    loadVideoComponent(movie_id); //function to generate the trailers and append below the banner
 
     lastSliderItem = sliderItems[Number(this.getAttribute("slider-control"))];
     lastSliderControl = this;
@@ -207,8 +200,14 @@ const loadVideoComponent = function(movie_id) {
 
   
   // Check if the movieDetail div already exists
-  let movieDetail = document.querySelector('movie-detail');
-  
+  let movieDetail = document.querySelector('.movie-detail');
+  //clear the previous trailers......
+  if(movieDetail){
+    const sliderInner = movieDetail.querySelector(".slider-inner");
+    while (sliderInner.firstChild) {
+      sliderInner.firstChild.remove();
+    }
+  }
   
   if (!movieDetail) {
     // Create the movieDetail div if it doesn't exist
